@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patience Bonita - Videos</title>
+  <style>
+    /* styles.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+header {
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+section {
+  padding: 20px;
+}
+
+#videos {
+  padding: 20px;
+  background-color: #1abc9c;
+}
+
+#videos h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Centering the videos horizontally */
+}
+
+.video {
+  width: 100%; /* Ensuring the video containers take full width of their grid area */
+  max-width: 560px; /* Limiting the maximum width to ensure proper display */
+  background-color: #34495e;
+  border-radius: 5px;
+  overflow: hidden; /* Ensuring that any overflowing content is hidden */
+}
+
+video {
+  width: 100%; /* Making sure the video takes the full width of its container */
+  height: auto; /* Keeping the aspect ratio */
+}
+
+footer {
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #1abc9c;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.contact-info a:hover {
+  border-bottom: 1px solid #1abc9c;
+}
+
+.contact-info a.twitter-link {
+  color: #1da1f2;
+}
+
+.contact-info a.twitter-link:hover {
+  border-bottom: none;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://www.instagram.com/patience.bonita.923?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@patiencebonnie?_t=8n23lmDqtyo&_r=1" target="_blank">TikTok</a>
+       <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Videos Section -->
+  <section id="videos">
+    <h1>Videos</h1>
+    <div class="videos-container">
+      <div class="video">
+        <video controls>
+          <source src="1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video">
+        <video controls>
+          <source src="2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video">
+        <video controls>
+          <source src="3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Add more videos as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>
+        <a href="https://api.whatsapp.com/send?phone=+754030106" target="_blank">WhatsApp</a>
+      </p>
+      <p>
+        <a href="tel:+256750919477">Phone: +256750919477</a>
+      </p>
+      <p>
+        <a href="https://www.tiktok.com/@patiencebonnie?_t=8n23lmDqtyo&_r=1" target="_blank">TikTok</a>
+      </p>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Patience Bonita. All rights reserved.</p>
+      <p>
+        <a style="color: white; font-weight: bolder; font-size: 15px; text-decoration: none;" href="https://api.whatsapp.com/send?phone=+779491167" target="_blank">Designed by: Wizcom Developer</a>
+      </p>
+      
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
